@@ -314,7 +314,7 @@ def ai_chat(request):  # Defines the ai_chat view function that processes user m
         data = json.loads(request.body)  # Parses the JSON data from the request body into a Python dictionary.
         user_message = data.get("message", "")  # Extracts the user's message from the parsed JSON. Defaults to an empty string if not found.
 
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyC-xTDYWG-TZ3e8rpwXovOp2BXU56ac2Jc"  # API URL for the AI service.
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=add your key"  # API URL for the AI service.
         headers = {"Content-Type": "application/json"}  # Sets the header to indicate the content type is JSON.
         payload = {  # Prepares the payload, wrapping the user message in the required format for the AI service.
             "contents": [{"parts": [{"text": user_message}]}]
